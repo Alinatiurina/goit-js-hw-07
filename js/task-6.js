@@ -18,9 +18,9 @@ function createBoxes(amount) {
       box.style.width = `${30+10*i}px`;
       box.style.backgroundColor = getRandomHexColor();
       boxes.appendChild(box);
-      
     }
   }
+ document.querySelector('#controls input').value = ''
 }
 
 btnCreate.addEventListener('click', () => {
@@ -32,6 +32,7 @@ btnCreate.addEventListener('click', () => {
 function destroyBoxes() {
   const boxes = document.getElementById('boxes');
   boxes.innerHTML = '';
+  
 }
   
 btnDestory.addEventListener('click', destroyBoxes);
