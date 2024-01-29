@@ -66,6 +66,7 @@ img {
   display: block;
   width: 360px;
   height: 300px;
+  object-fit: cover;
 }
 .gallery > li {
   flex-basis: calc((100% - 48px) / 3);
