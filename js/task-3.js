@@ -1,11 +1,10 @@
-const userName = document.getElementById("name-input");
-const newName= document.getElementById("name-output")
-userName.addEventListener("input", (event) => {
+const userNameInput = document.getElementById("name-input");
+const nameOutput= document.getElementById("name-output")
+userNameInput.addEventListener("input", (event) => {
     
     if (event.target.value.trim() !== "") {
-    newName.textContent = event.target.value.trim();
-    } else {
-        newName.textContent = "Anonymous"
-    }; 
+    nameOutput.textContent = event.target.value.trim();
+    } else 
+        nameOutput.textContent = "Anonymous"; 
 }
  );
